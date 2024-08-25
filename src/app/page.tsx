@@ -34,7 +34,7 @@ export default function Home() {
         </h1>
       </div>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
+      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-3 lg:text-left gap-8">
         <a
           href="#"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-yellow-300 hover:bg-purple-700 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
@@ -42,13 +42,13 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2 className="mb-3 text-2xl font-semibold text-yellow-300">
-            Quiplash Standup{" "}
+            BrainBuzz Blitz{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              🎭
+              🧠⚡
             </span>
           </h2>
           <p className="m-0 max-w-[30ch] text-sm text-yellow-100 opacity-50">
-            Battle your colleagues with witty responses to prompts!
+            Zap your neurons with daily trivia about our wonderful whacky world!
           </p>
         </a>
 
@@ -59,49 +59,27 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2 className="mb-3 text-2xl font-semibold text-yellow-300">
-            Drawful Daily{" "}
+            Emoji-tionary{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              🎨
+              🎭👨‍💻
             </span>
           </h2>
           <p className="m-0 max-w-[30ch] text-sm text-yellow-100 opacity-50">
-            Draw your tasks and let others guess what you're working on!
+            Guess the movie, show, or event from the emoji pictogram!
           </p>
         </a>
 
-        <a
-          href="#"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-yellow-300 hover:bg-purple-700 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <div className="group rounded-lg border border-dashed border-yellow-300 px-5 py-4 transition-colors hover:bg-purple-700 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
           <h2 className="mb-3 text-2xl font-semibold text-yellow-300">
-            Trivia Murder Party: Scrum Edition{" "}
+            Coming Soon{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              🔪
+              🚀
             </span>
           </h2>
           <p className="m-0 max-w-[30ch] text-sm text-yellow-100 opacity-50">
-            Test your Agile knowledge in this deadly quiz game!
+            More exciting games are on the way! Stay tuned for updates.
           </p>
-        </a>
-
-        <a
-          href="#"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-yellow-300 hover:bg-purple-700 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold text-yellow-300">
-            Fibbage: Sprint Planning{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              🤥
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm text-yellow-100 opacity-50">
-            Lie about your sprint goals and see who can spot the truth!
-          </p>
-        </a>
+        </div>
       </div>
     </main>
   );
