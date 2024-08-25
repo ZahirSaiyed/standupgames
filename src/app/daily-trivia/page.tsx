@@ -8,12 +8,12 @@ export default function DailyTrivia() {
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
   const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
 
-  const question = "What's the airspeed velocity of an unladen swallow?";
+  const question = "Which country won the FIFA World Cup in 2022?";
   const options = [
-    "African or European?",
-    "24 mph",
-    "11 m/s",
-    "I don't know that!"
+    "Brazil",
+    "France",
+    "Argentina",
+    "Germany"
   ];
   const correctAnswer = 2;
 
