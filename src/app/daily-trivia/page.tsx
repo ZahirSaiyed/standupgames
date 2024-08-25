@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import confetti from 'canvas-confetti';
 
 export default function DailyTrivia() {
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
@@ -18,7 +19,15 @@ export default function DailyTrivia() {
 
   useEffect(() => {
     if (selectedAnswer !== null) {
-      setIsCorrect(selectedAnswer === correctAnswer);
+      const correct = selectedAnswer === correctAnswer;
+      setIsCorrect(correct);
+      if (correct) {
+        confetti({
+          particleCount: 100,
+          spread: 70,
+          origin: { y: 0.6 }
+        });
+      }
     }
   }, [selectedAnswer]);
 
@@ -40,7 +49,7 @@ export default function DailyTrivia() {
                   selectedAnswer === index
                     ? isCorrect
                       ? 'bg-green-500 text-white'
-                      : 'bg-red-500 text-white'
+                      : 'bg-red-500 text-white animate-shake'
                     : 'bg-purple-700 hover:bg-purple-600'
                 }`}
                 disabled={selectedAnswer !== null}
